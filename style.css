@@ -5,6 +5,7 @@
 
 body {
 	background-color:#f5f5f5;
+	align-content: space-between;
 
 }
 
@@ -75,7 +76,6 @@ header {
 	background-color: white;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	padding-right: 10%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -104,7 +104,7 @@ header ul li a {
 	text-decoration: none;
 }
 
-.home-content {
+.about-content {
 	padding-top: 75px;
 	padding-bottom: 75px;
 	padding-left: 10%;
@@ -113,7 +113,7 @@ header ul li a {
 	justify-content: space-between; 
 }
 
-.home-content img {
+.about-content img {
 	width: 40%;
 	border-top: 5px solid white;
 	border-bottom: 5px solid white;
@@ -122,28 +122,67 @@ header ul li a {
 	box-shadow:0 0 20px tan;
 }
 
-.home-content .text-wrap {
+.about-content .text-wrap {
 	width: 55%;
 }
 
-.beans-bg {
-	background-image: url("beans.jpg");
-	background-attachment: fixed;
-	background-size: 100%;
-	padding-top: 75px;
-	padding-bottom: 75px;
-	padding-left: 10%;
+.socials {
+	width: 40%;
+	border-top: 5px solid white;
+	border-bottom: 5px solid white;
+	border-left: 5px solid white;
+	border-right: 5px solid white;
+	box-shadow:0 0 20px tan;
+	background-color: white;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	padding-right: 10%;
 	display: flex;
 	justify-content: space-between;
-	align-items: flex-start;
+	align-items: center;
+	width: 100%;
 }
 
-.beans-bg img {
-	width: 22%;
+.socials ul {
+	width: 60%;
+	display: flex;
+	justify-content: flex-end;
 }
 
-.poloraid {
+.socials ul li {
+	list-style-type: none;
+	margin-left: 25px;
+	font-size: 18px;
+}
+
+.socials ul li a {
+	color: #654321;
+	text-decoration: none;
+}
+
+.socials p {
+	padding-left: 10%;
+	padding-right: 10%;
+	display: flex;
+	justify-content: space-between; 
+}
+}
+
+
+.menu-content {
+	padding-top: 75px;
+	padding-bottom: 75px;
+	display: flex;
+	justify-content: space-between; 
+}
+
+.menu-text-wrap {
+	width: 55%;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	padding-left: 10%;
+	padding-right: 10%;
+	background-color: white;
 	border-top: 5px solid white;
 	border-bottom: 5px solid white;
 	border-left: 5px solid white;
@@ -151,14 +190,34 @@ header ul li a {
 	box-shadow:0 0 20px tan;
 }
 
-
-.menu-content {
-	display: flex;
-	padding-top: 75px;
-	padding-bottom: 75px;
-	padding-left: 10%;
-	padding-right: 10%;
+.poloraid {
+	border-top: 10px solid white;
+	border-bottom: 20px solid white;
+	border-left: 10px solid white;
+	border-right: 10px solid white;
+	box-shadow: 0 0 10px black;
+	display:flex;
+	align-items: flex-start;
 	justify-content: space-between;
+}
+
+.beans-bg img{
+	width: 50%;
+	display:flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.beans-bg {
+	float: right;
+	background-image: url("beans.jpg");
+	background-attachment: fixed;
+	background-size: 100%;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	padding-left: 25px;
+	padding-right: 25px;
+	display:inline-block;
 }
 
 .wrapper {
@@ -170,29 +229,87 @@ header ul li a {
 .wrapper div {
 	font-size: 18px;
 	color: brown;
+
 }
 
-.footer {
-	background-color: #c4a092;
-	padding-top: 75px;
-	padding-bottom: 75px;
+.wood-bg {
+	background-image: url("wood.jpg");
+	background-attachment: fixed;
+	background-size: 100%;
+	padding-top: 25px;
+	padding-bottom: 25px;
 	padding-left: 10%;
 	padding-right: 10%;
 	display: flex;
 	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.footer {
+	padding-top: 25px;
+	padding-bottom: 25px;
+	display: flex;
+	justify-content: space-between;
 	align-items:flex-start;
 	width: 100%;
-
 }
 
 .email-signup {
 	width: 40%;
+	background-color: white;
+	box-shadow: 0 0 10px black;
+	padding: 10px;
 }
 
 .email-wrap {
 	display: flex;
 }
 
+.hours {
+	width: 40%;
+	background-color: white;
+	box-shadow: 0 0 10px black;
+	padding: 10px;
+}
+
+.buttons {
+	border-style: solid #735e5a;
+	border: 3px;
+	border-color: brown;
+	background-color: transparent;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 25px;
+	padding-right: 25px;
+	text-decoration: none;
+}
+
+.home-content {
+	padding-top: 75px;
+	padding-bottom: 75px;
+	display: flex;
+	justify-content: space-between; 
+}
+
+.home-content .text-wrap {
+	width: 55%;
+	padding: 10px;
+	background-color: white;
+	border-top: 5px solid white;
+	border-bottom: 5px solid white;
+	border-left: 5px solid white;
+	border-right: 5px solid white;
+	box-shadow:0 0 20px tan;
+}
+
+.home-content img {
+	width: 40%;
+	border-top: 5px solid white;
+	border-bottom: 5px solid white;
+	border-left: 5px solid white;
+	border-right: 5px solid white;
+	box-shadow:0 0 20px tan;
+}
 input {
 	width: 100%;
 	padding: 10px;
@@ -212,4 +329,7 @@ button {
 	padding: 10px;
 	width: 25%;
 }
+button:hover{
+	background-color: brown;
+	color: #f6f3ee;
 
